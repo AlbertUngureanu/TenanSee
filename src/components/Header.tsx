@@ -7,7 +7,7 @@ export default function Header() {
       <div className="header-inner">
         <a href="#top" className="brand" aria-label="Tenansee home">
           <span className="brand-mark" aria-hidden="true">🏡</span>
-          <span className="brand-text">Tenansee</span>
+          <span className="brand-text">Tenansee test</span>
         </a>
 
         <nav className="main-nav" aria-label="Primary">
