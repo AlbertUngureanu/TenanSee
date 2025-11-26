@@ -110,6 +110,9 @@ export default function Hero() {
             {status === 'error' && errorMsg && <span className="error-msg">{errorMsg}</span>}
             {status === 'idle' && errorMsg && <span className="error-msg">{errorMsg}</span>}
           </div>
+          <p className="hero-subtitle">
+            Primele 100 de persoane au șansa să câștige 5 anunțuri premium gratuite.
+          </p>
           <p className="consent-note">Prin înscriere accepți să primești noutăți. Te poți dezabona oricând.</p>
         </div>
         <div className="hero-media" aria-label="Product preview area">
