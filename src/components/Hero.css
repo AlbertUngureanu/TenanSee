@@ -127,6 +127,11 @@
   .hero-cta .email-form button {
     width: 100%;
   }
+  .input {
+    height: 32px !important;
+    padding: 4px 8px;
+    font-size: 16px; /* keep >=16px to avoid Safari zoom */
+  }
 }
 
 .hero::after {

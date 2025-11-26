@@ -91,6 +91,7 @@ export default function Hero() {
                 aria-label="Email"
                 required
                 disabled={status === 'submitting'}
+                style={{ maxHeight: '30px' }}
               />
               {/* Honeypot hidden field */}
               <input type="text" name="_gotcha" className="hidden-field" tabIndex={-1} autoComplete="off" />
