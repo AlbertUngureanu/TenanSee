@@ -6,7 +6,9 @@ export default function Header() {
     <header className="site-header" role="banner">
       <div className="header-inner">
         <a href="#top" className="brand" aria-label="Tenansee home">
-          <span className="brand-mark" aria-hidden="true">🏡</span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="logo.png" style={{ height: '1em', width: 'auto', verticalAlign: 'middle' }}/>
+          </span>
           <span className="brand-text">Tenansee</span>
         </a>
 

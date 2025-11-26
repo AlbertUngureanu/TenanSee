@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from './Button'
 import './Hero.css'
+import posthog from 'posthog-js';
 
 // Formspree endpoint placeholder.
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mpwkzkdo'
@@ -31,6 +32,9 @@ export default function Hero() {
       setEmail('')
       return
     }
+    
+    posthog.capture('CTA-Pressed', {});
+    posthog.identify(trimmed, {name: trimmed});
 
     setStatus('submitting')
     try {
@@ -93,6 +97,7 @@ export default function Hero() {
               <Button
                 variant="secondary"
                 type="submit"
+                style={{ backgroundColor: 'green', color: 'white' }}
                 disabled={status === 'submitting'}
                 aria-disabled={status === 'submitting'}
               >
@@ -108,7 +113,9 @@ export default function Hero() {
           <p className="consent-note">Prin înscriere accepți să primești noutăți. Te poți dezabona oricând.</p>
         </div>
         <div className="hero-media" aria-label="Product preview area">
-          <div className="media-placeholder">Will add a short demo video or a screenshot carousel here</div>
+          <div className="media-placeholder" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <img src="logo.png" />
+          </div>
         </div>
       </div>
     </section>
