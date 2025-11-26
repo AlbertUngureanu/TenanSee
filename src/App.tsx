@@ -23,7 +23,9 @@ function App() {
 
   return (
       <PostHogProvider client={posthog}>
-        <Header />
+        <div className="mobile-wrapper">
+          <Header />
+        </div>
         <main>
           <Hero />
           <Features />

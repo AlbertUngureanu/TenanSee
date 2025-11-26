@@ -67,13 +67,15 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-inner">
         <div className="hero-copy">
-          <h1 id="hero-title" className="hero-title">
-            <em>Transparență și încredere</em>
-            <br />
-            între
-            <br />
-            <em>chiriași și proprietari</em>
-          </h1>
+          <div className="mobile-wrapper">
+            <h1 id="hero-title" className="hero-title">
+              <em>Transparență și încredere</em>
+              <br />
+              între
+              <br />
+              <em>chiriași și proprietari</em>
+            </h1>
+          </div>
           <p className="hero-subtitle">
             Răsfoiește anunțurile, discută în siguranță și programează vizionări.
             <br />
@@ -116,9 +118,12 @@ export default function Hero() {
           </p>
           <p className="consent-note">Prin înscriere accepți să primești noutăți. Te poți dezabona oricând.</p>
         </div>
-        <div className="hero-media" aria-label="Product preview area">
-          <div className="media-placeholder" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <img src="logo.png" />
+        
+        <div className="mobile-wrapper">
+          <div className="hero-media" aria-label="Product preview area">
+            <div className="media-placeholder" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <img src="logo.png" />
+            </div>
           </div>
         </div>
       </div>
