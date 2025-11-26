@@ -26,7 +26,7 @@ export default function Features() {
         <Feature icon="🙍🏻‍♂️" title="Profiluri de utilizator">
           Profiluri de utilizator clare, cu istoricul închirierilor și recenzii.
         </Feature>
-        <Feature icon="🗪" title="Chat dedicat">
+        <Feature icon="💬" title="Chat dedicat">
           Comunicați direct prin intermediul platformei.
         </Feature>
         <Feature icon="📅" title="Programare vizionări">
